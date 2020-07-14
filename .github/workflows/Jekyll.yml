@@ -23,11 +23,12 @@ jobs:
         docker run \
         -v ${{ github.workspace }}/master:/srv/jekyll -v ${{ github.workspace }}/master/_site:/srv/jekyll/_site \
         veerendrav2/my-jekyll:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
-    - name: Cloning master branch
+    
+    - name: Cloning compiled branch
       uses: actions/checkout@v2
       with:
-        ref: 'master'
-        path: 'master'
+        ref: 'compiled'
+        path: 'compiled'
 
     - name: Copying _site content to master branch repo
       run: cp -R ${{ github.workspace }}/master/_site/* ${{ github.workspace }}/compiled
