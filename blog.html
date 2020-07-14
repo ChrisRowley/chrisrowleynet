@@ -1,14 +1,38 @@
----
-layout: default
-title: Blog
----
-<h1>Latest Posts</h1>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Blog</title>
+  </head>
+  <body>
+    <nav>
+  
+    <a href="/" >
+      Home
+    </a>
+  
+    <a href="/about.html" >
+      About
+    </a>
+  
+    <a href="/blog.html" style="color: red;">
+      Blog
+    </a>
+  
+</nav>
+    <h1>Latest Posts</h1>
 
 <ul>
-  {% for post in site.posts %}
+  
     <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      {{ post.excerpt }}
+      <h2><a href="/2019/08/20/bananas.html">Bananas</a></h2>
+      <p>A banana is an edible fruit – botanically a berry – produced by several kinds
+of large herbaceous flowering plants in the genus Musa.</p>
+
     </li>
-  {% endfor %}
+  
 </ul>
+    
+<img src="../assets/Jekyll_Logo.png" width="140" height="65" alt="Jekyll Logo" class="right">
+  </body>
+</html>
