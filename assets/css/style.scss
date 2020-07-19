@@ -1,13 +1,79 @@
 ---
 ---
+//Colours
+$colbackground: #1b263b;
+$colheaderfooter: #0d1b2a;
+$coltext: #e5e5e5;
+$colnavbutton: #778da9;
 
 // start content
-.footer {
-    position: fixed;
+
+.header {
+    position: fixed; 
     left: 0;
-    bottom: 0;
+    top: 0;
     width: 100%;
-    background-color: red;
-    color: white;
+    background-color: $colheaderfooter;
+    color: $coltext;
     text-align: center;
-  }
+}
+
+body {
+  background-color: $colbackground;
+  font-family: 'Open Sans', sans-serif;
+  color: $coltext;
+  padding: 25px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: $colheaderfooter;
+  color: $coltext;
+  text-align: center;
+  vertical-align: middle;
+} 
+
+a:visited {
+  color: $colnavbutton
+}
+
+//Nav Bar Styles
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+li {
+  float: left;
+}
+
+li a nbutton{
+  display: block;
+  color: $coltext;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a nbutton:hover {
+  background-color:$colnavbutton;
+  color: $coltext;
+  
+}

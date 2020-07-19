@@ -1,6 +1,9 @@
 ---
 layout: default
-title: Home
+title: ChrisRowley.net
 ---
-<h1>Test Page for S3</h1>
-<h2>A static site produced with Jekyll hosted in an S3 Bucket</h2>
+<p style="text-align:center">
+    <h1>AWS S3 Test Page</h1>
+    <h2>A static site produced with Jekyll hosted in an S3 Bucket</h2>
+    <img src="../assets/bucket.png">
+</p>

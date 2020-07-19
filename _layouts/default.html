@@ -3,13 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.scss">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
   </head>
-  <body>
-    {% include navigation.html %}
-    {{ content }}
-    <div class="footer"> 
-    {% include footer.html %}
+  <body class="body">
+      <div class="header"> 
+      {% include navigation.html %}
+      </div>
+      {{ content }}
+      <div class="footer"> 
+      {% include footer.html %}
+      </div>
     </div>  
   </body>
 </html>
