@@ -2,23 +2,65 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.scss">
+    <title>ChrisRowley.net</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
   </head>
-  <body>
-    <nav>
+  <body class="body">
+      <div class="header"> 
+      <nav>
   
-    <a href="/" style="color: red;">
-      Home
-    </a>
+    <li>
+      <a href="/" style="color: red;">
+        <nbutton>
+        Home
+        </nbutton>
+      </a>
+  </li>
+  
+    <li>
+      <a href="/About.html" >
+        <nbutton>
+        About
+        </nbutton>
+      </a>
+  </li>
+  
+    <li>
+      <a href="/blog.html" >
+        <nbutton>
+        Blog
+        </nbutton>
+      </a>
+  </li>
   
 </nav>
-    <h1>Test Page for S3</h1>
-<h2>A static site produced with Jekyll hosted in an S3 Bucket</h2>
 
-    <div class="footer"> 
-    
-<img src="../assets/Jekyll_Logo.png" width="140" height="65" alt="Jekyll Logo" class="right">
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var header = document.getElementById("myHeader");
+  var sticky = header.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+  </script>
+      </div>
+      <p style="text-align:center">
+    <h1>AWS S3 Test Page</h1>
+    <h2>A static site produced with Jekyll hosted in an S3 Bucket</h2>
+    <img src="../assets/bucket.png" />
+</p>
+
+      <div class="footer"> 
+      
+Powered by <img src="../assets/Jekyll_Logo.png" width="140" height="65" alt="Jekyll Logo" class="right">
+      </div>
     </div>  
   </body>
 </html>
