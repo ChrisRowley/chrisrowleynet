@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"style.scss"
+	],
+	"sourcesContent": [
+		"// start content\n.footer {\n    position: fixed;\n    left: 0;\n    bottom: 0;\n    width: 100%;\n    background-color: red;\n    color: white;\n    text-align: center;\n  }"
+	],
+	"names": [],
+	"mappings": "AACA,AAAA,OAAO,CAAC,EACJ,QAAQ,EAAE,KAAK,EACf,IAAI,EAAE,CAAC,EACP,MAAM,EAAE,CAAC,EACT,KAAK,EAAE,IAAI,EACX,gBAAgB,EAAE,GAAG,EACrB,KAAK,EAAE,KAAK,EACZ,UAAU,EAAE,MAAM,GACnB"
+}
