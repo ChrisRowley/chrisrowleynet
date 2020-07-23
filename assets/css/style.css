@@ -2,7 +2,7 @@
 
 body { background-color: #1b263b; font-family: 'Open Sans', sans-serif; color: #e5e5e5; padding: 25px; }
 
-.footer { position: fixed; left: 0; bottom: 0; width: 100%; background-color: #0d1b2a; color: #e5e5e5; text-align: center; vertical-align: middle; }
+.footer { position: fixed; left: 0; bottom: 0; width: 100%; background-color: #0d1b2a; color: #e5e5e5; text-align: center; display: flex; align-items: center; }
 
 a:visited { color: #778da9; }
 
@@ -12,12 +12,12 @@ a:visited { color: #778da9; }
 
 nav { list-style-type: none; margin: 0; padding: 0; overflow: hidden; }
 
-li { float: left; }
+navli { float: left; }
 
-li a nbutton { display: block; color: #e5e5e5; text-align: center; padding: 14px 16px; text-decoration: none; }
+navli a nbutton { display: block; color: #e5e5e5; text-align: center; padding: 14px 16px; text-decoration: none; }
 
-li a nbutton:hover { background-color: #778da9; color: #e5e5e5; }
+navli a nbutton:hover { background-color: #778da9; color: #e5e5e5; }
 
-.center { display: block; margin-left: auto; margin-right: auto; width: 50%; }
+.center { display: block; margin-left: auto; margin-right: auto; }
 
 /*# sourceMappingURL=style.css.map */

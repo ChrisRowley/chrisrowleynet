@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>About</title>
+    <title>About this site</title>
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
   </head>
@@ -10,29 +10,29 @@
       <div class="header"> 
       <nav>
   
-    <li>
+    <navli>
       <a href="/" >
         <nbutton>
         Home
         </nbutton>
       </a>
-  </li>
+  </navli>
   
-    <li>
+    <navli>
       <a href="/about.html" style="color: red;">
         <nbutton>
         About
         </nbutton>
       </a>
-  </li>
+  </navli>
   
-    <li>
+    <navli>
       <a href="/blog.html" >
         <nbutton>
         Blog
         </nbutton>
       </a>
-  </li>
+  </navli>
   
 </nav>
 
@@ -51,13 +51,19 @@
   }
   </script>
       </div>
-      <h1 id="about-page">About page</h1>
+      <h1>About this site</h1>
 
-<p>This page tells you a little bit about me.</p>
+<p>This site is an experiment as to how a static website can be hosted in an AWS S3 bucket, whilst fulfilled the following objectives:</p>
+<ul>
+    <li>Ease of maintenance</li>
+    <li>A somewhat dynamic feel</li>
+    <li>Is Serverless</li>
+</ul>
+<p>This is achieved through the use of Jekyll static site generator.</p>
 
       <div class="footer"> 
       
-Powered by <img src="../assets/Jekyll_Logo.png" width="140" height="65" alt="Jekyll Logo" class="right">
+Powered by <img src="../assets/Jekyll_Logo.png" width="140" height="65" alt="Jekyll Logo" class="center">
       </div>
     </div>  
   </body>
