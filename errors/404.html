@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>404 - Oops something went wrong</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+  </head>
+  <body class="body">
+      <div class="header"> 
+      <nav>
+  
+    <li>
+      <a href="/" >
+        <nbutton>
+        Home
+        </nbutton>
+      </a>
+  </li>
+  
+    <li>
+      <a href="/about.html" >
+        <nbutton>
+        About
+        </nbutton>
+      </a>
+  </li>
+  
+    <li>
+      <a href="/blog.html" >
+        <nbutton>
+        Blog
+        </nbutton>
+      </a>
+  </li>
+  
+</nav>
+
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var header = document.getElementById("myHeader");
+  var sticky = header.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+  </script>
+      </div>
+      <h1 class="center">Oops something went wrong...</h1>
+
+<img src="../assets/somethingwentwrong.png" class="center">
+      <div class="footer"> 
+      
+Powered by <img src="../assets/Jekyll_Logo.png" width="140" height="65" alt="Jekyll Logo" class="right">
+      </div>
+    </div>  
+  </body>
+</html>
