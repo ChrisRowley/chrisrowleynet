@@ -1,12 +1,12 @@
 <nav>
   {% for item in site.data.navigation %}
-    <li>
+    <navli>
       <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
         <nbutton>
         {{ item.name }}
         </nbutton>
       </a>
-  </li>
+  </navli>
   {% endfor %}
 </nav>
 

@@ -33,7 +33,9 @@ body {
   background-color: $colheaderfooter;
   color: $coltext;
   text-align: center;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  //vertical-align: middle;
 } 
 
 a:visited {
@@ -60,11 +62,11 @@ nav {
   
 }
 
-li {
+navli {
   float: left;
 }
 
-li a nbutton{
+navli a nbutton{
   display: block;
   color: $coltext;
   text-align: center;
@@ -72,7 +74,7 @@ li a nbutton{
   text-decoration: none;
 }
 
-li a nbutton:hover {
+navli a nbutton:hover {
   background-color:$colnavbutton;
   color: $coltext;
   
@@ -82,5 +84,6 @@ li a nbutton:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  //width: 50%;
 }
+
